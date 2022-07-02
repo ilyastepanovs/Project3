@@ -2,11 +2,11 @@
 
 ## Description
 
-* in current project presented UI tests for [Stellar Burgers](https://stellarburgers.nomoreparties.site/);
+* The Project3 includes UI tests for [Stellar Burgers](https://stellarburgers.nomoreparties.site/);
 * tests located at ```/src/test/```;
 * object models located at ```/src/main/java/pageobjects/```;
 * test data creates before and removes after running by API requests;
-* allure report (it's available at: ```target/allure-results/```) was added.
+* allure report (available at: ```target/allure-results/```) was added.
 
 ## List of Checks 
 ### User Creation 
@@ -47,7 +47,7 @@
 1. Clone repository: 
 ```git clone git@github.com:ilyastepanovs/Project3.git```;
 2. Open project in IDE;
-3. Run tests. They located at ```/src/test/```
+3. Run the tests from the following location ```/src/test/```
 
 ## How to Open Allure Report?
 1. Open project directory;
