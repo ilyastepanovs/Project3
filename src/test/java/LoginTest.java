@@ -25,7 +25,7 @@ public class LoginTest {
     @Before
     public void startBrowser(){
         Configuration.startMaximized = true;
-        Configuration.browser = "safari";
+        Configuration.browser = "chrome";
         user = DataGenerator.getRandomUser();
         ValidatableResponse createResponse = userClient.userRegistration(user);
         accessToken = createResponse.extract().path("accessToken");
@@ -41,7 +41,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("check Login From Constructor Page")
+    @DisplayName("Check Login From Constructor Page")
     public void checkLoginFromConstructorPage(){
         ConstructorPage constructorPage = open(ConstructorPage.URL, ConstructorPage.class);
         constructorPage.clickLoginButton();
@@ -53,7 +53,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("check Login By Profile button")
+    @DisplayName("Check Login By Profile Button")
     public void checkLoginByProfileButton(){
         ConstructorPage constructorPage = open(ConstructorPage.URL, ConstructorPage.class);
         constructorPage.clickProfileButton();
@@ -65,7 +65,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("Проверка входа с кнопки 'Личный кабинет' на регистрации")
+    @DisplayName("Check Login From By Register Button")
     public void checkLoginFromByRegisterButton(){
         ConstructorPage constructorPage = open(ConstructorPage.URL, ConstructorPage.class);
         constructorPage.clickProfileButton();

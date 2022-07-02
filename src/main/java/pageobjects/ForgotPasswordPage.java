@@ -9,7 +9,7 @@ public class ForgotPasswordPage {
     @FindBy(how = How.XPATH,using = "//a[text() = 'Войти']")
     private SelenideElement loginButton;
 
-    @Step("click Login Button")
+    @Step("Click Login Button")
     public void clickLoginButton(){
         loginButton.click();
     }

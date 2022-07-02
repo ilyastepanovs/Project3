@@ -31,17 +31,17 @@ public class LoginPage {
     @FindBy(how = How.XPATH, using = "//button[text()='Выход']")
     private SelenideElement logoutButton;
 
-    @Step("set Email")
+    @Step("Set Email")
     public void setEmail(String email){
         emailField.setValue(email);
     }
 
-    @Step("set Password")
+    @Step("Set Password")
     public void setPassword(String password){
         passwordField.setValue(password);
     }
 
-    @Step("click Register Link")
+    @Step("Click Register Link")
     public void clickRegisterLink(){
         registerLink.click();
 
@@ -52,7 +52,7 @@ public class LoginPage {
         loginButton.click();
     }
 
-    @Step("click Forgot Password Link")
+    @Step("Click Forgot Password Link")
     public void clickForgotPasswordLink(){
         forgotPasswordLink.click();
     }

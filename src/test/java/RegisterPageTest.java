@@ -25,7 +25,7 @@ public class RegisterPageTest {
     @Before
     public void startBrowser(){
         Configuration.startMaximized = true;
-        Configuration.browser = "safari";
+        Configuration.browser = "chrome";
         user = DataGenerator.getRandomUser();
     }
 
@@ -56,7 +56,7 @@ public class RegisterPageTest {
     }
 
     @Test
-    @DisplayName("Check Registration with invalid password")
+    @DisplayName("Check Registration with Invalid Password")
     public void checkRegistrationWithInvalidPassword() {
         ConstructorPage constructorPage = open(ConstructorPage.URL, ConstructorPage.class);
         constructorPage.clickLoginButton();

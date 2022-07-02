@@ -17,17 +17,17 @@ public class ProfilePage {
     @FindBy(how = How.XPATH,using = "//div[@class = 'AppHeader_header__logo__2D0X2']")
     private SelenideElement logoButton;
 
-    @Step("click Constructor Button")
+    @Step("Click Constructor Button")
     public void clickConstructorButton(){
         constructorButton.click();
     }
 
-    @Step("click Logout Button")
+    @Step("Click Logout Button")
     public void clickLogoutButton(){
         logoutButton.click();
     }
 
-    @Step("click Logo Button")
+    @Step("Click Logo Button")
     public void clickLogoButton(){
         logoButton.click();
     }

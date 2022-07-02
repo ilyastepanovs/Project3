@@ -36,12 +36,12 @@ public class ConstructorPage {
     @FindBy(how = How.XPATH, using = ".//button[text()='Оформить заказ']")
     private SelenideElement createOrderButton;
 
-    @Step("click login Button")
+    @Step("Click login Button")
     public void clickLoginButton() {
         loginButton.click();
     }
 
-    @Step("click Profile Button")
+    @Step("Click Profile Button")
     public void clickProfileButton() {
         profileButton.click();
     }
@@ -52,17 +52,17 @@ public class ConstructorPage {
         return createOrderButton.isDisplayed();
     }
 
-    @Step("click Bun Tab")
+    @Step("Click Bun Tab")
     public void clickBunTab() {
         bunTab.click();
     }
 
-    @Step("click Sauce Tab")
+    @Step("Click Sauce Tab")
     public void clickSauceTab() {
         sauceTab.click();
     }
 
-    @Step("click Filling Tab")
+    @Step("Click Filling Tab")
     public void clickFillingTab() {
         fillingTab.click();
     }

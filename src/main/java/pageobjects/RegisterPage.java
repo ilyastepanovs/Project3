@@ -41,12 +41,12 @@ public class RegisterPage {
         emailField.setValue(email);
     }
 
-    @Step("click Register Button")
+    @Step("Click Register Button")
     public void clickRegisterButton(){
         registerButton.click();
     }
 
-    @Step("click Login Button")
+    @Step("Click Login Button")
     public void clickLoginButton(){
         loginButton.click();
     }
