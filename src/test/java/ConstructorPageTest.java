@@ -22,7 +22,7 @@ public class ConstructorPageTest {
     @Before
     public void startBrowser(){
         Configuration.startMaximized = true;
-        Configuration.browser = "chrome";
+        Configuration.browser = "safari";
         user = DataGenerator.getRandomUser();
         ValidatableResponse createResponse = userClient.userRegistration(user);
         accessToken = createResponse.extract().path("accessToken");
