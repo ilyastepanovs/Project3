@@ -26,6 +26,8 @@ public class RegisterPageTest {
     public void startBrowser(){
         Configuration.startMaximized = true;
         Configuration.browser = "chrome";
+        System.setProperty("chromeoptions.args",
+                "--headless, --disable-gpu, --no-sandbox, ---allow-insecure-localhost, --disable-dev-shm-usage");
         user = DataGenerator.getRandomUser();
     }
 
