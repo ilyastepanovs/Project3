@@ -24,7 +24,7 @@ public class ConstructorPageTest {
         Configuration.startMaximized = true;
         Configuration.browser = "chrome";
         System.setProperty("chromeoptions.args",
-                "--headless, --disable-gpu, --no-sandbox, ---allow-insecure-localhost, --disable-dev-shm-usage");
+                "--whitelisted-ips=\"\",--headless, --disable-gpu, --no-sandbox, ---allow-insecure-localhost, --disable-dev-shm-usage");
         user = DataGenerator.getRandomUser();
         ValidatableResponse createResponse = userClient.userRegistration(user);
         accessToken = createResponse.extract().path("accessToken");
