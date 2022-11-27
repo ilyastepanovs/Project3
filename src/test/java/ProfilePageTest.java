@@ -23,9 +23,9 @@ public class ProfilePageTest {
     public void startBrowser(){
         Configuration.startMaximized = true;
         Configuration.browser = "chrome";
+        System.setProperty("webdriver.chrome.whitelistedIps", "");
         System.setProperty("chromeoptions.args",
-                "--whitelisted-ips=\"\",--headless, --disable-gpu, --no-sandbox, ---allow-insecure-localhost, --disable-dev-shm-usage");
-         user = DataGenerator.getRandomUser();
+                "--headless, --disable-gpu, --no-sandbox, ---allow-insecure-localhost, --disable-dev-shm-usage"); user = DataGenerator.getRandomUser();
         ValidatableResponse createResponse = userClient.userRegistration(user);
         accessToken = createResponse.extract().path("accessToken");
         user.setAccessToken(accessToken);
